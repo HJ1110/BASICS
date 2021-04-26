@@ -1,26 +1,20 @@
+# HOW TO MAKE PIKACHU WITH HELP OF PYTHON
 import turtle
-
-
 def gajurel(x, y):
     turtle.setx(x)
     turtle.sety(y)
     print(x, y)
-
-
 class Cartoon:
-
     def __init__(self):
         self.t = turtle.Turtle()
         t = self.t
         t.pensize(3)
         t.speed(9)
         t.ondrag(gajurel)
-
     def meme(self, x, y):
         self.t.penup()
         self.t.goto(x, y)
         self.t.pendown()
-
     def aankha1(self, x, y):
         self.meme(x, y)
         t = self.t
@@ -29,19 +23,16 @@ class Cartoon:
         t.begin_fill()
         t.circle(22)
         t.end_fill()
-
         self.meme(x, y + 10)
         t.fillcolor('#000000')
         t.begin_fill()
         t.circle(10)
         t.end_fill()
-
         self.meme(x + 6, y + 22)
         t.fillcolor('#ffffff')
         t.begin_fill()
         t.circle(10)
         t.end_fill()
-
     def aankha2(self, x, y):
         self.meme(x, y)
         t = self.t
@@ -50,23 +41,19 @@ class Cartoon:
         t.begin_fill()
         t.circle(22)
         t.end_fill()
-
         self.meme(x, y + 10)
         t.fillcolor('#000000')
         t.begin_fill()
         t.circle(10)
         t.end_fill()
-
         self.meme(x - 6, y + 22)
         t.fillcolor('#ffffff')
         t.begin_fill()
         t.circle(10)
         t.end_fill()
-
     def mukh(self, x, y):
         self.meme(x, y)
         t = self.t
-
         t.fillcolor('#88141D')
         t.begin_fill()
         #
@@ -79,9 +66,7 @@ class Cartoon:
             t.right(3)
             t.fd(a)
             l1.append(t.position())
-
         self.meme(x, y)
-
         t.seth(10)
         a = 0.7
         for i in range(28):
@@ -89,21 +74,17 @@ class Cartoon:
             t.left(3)
             t.fd(a)
             l2.append(t.position())
-
         #
-
         t.seth(10)
         t.circle(50, 15)
         t.left(180)
         t.circle(-50, 15)
-
         t.circle(-50, 40)
         t.seth(233)
         t.circle(-50, 55)
         t.left(180)
         t.circle(50, 12.1)
         t.end_fill()
-
         #
         self.meme(17, 54)
         t.fillcolor('#DD716F')
@@ -117,13 +98,11 @@ class Cartoon:
             t.goto(pos[0], pos[1] + 1.5)
         t.pendown()
         t.end_fill()
-
         #
         self.meme(-17, 94)
         t.seth(8)
         t.fd(4)
         t.back(8)
-
     #
     def gaala1(self, x, y):
         turtle.tracer(False)
@@ -144,7 +123,6 @@ class Cartoon:
                 t.fd(a)
         t.end_fill()
         turtle.tracer(True)
-
     def gaala2(self, x, y):
         t = self.t
         turtle.tracer(False)
@@ -164,7 +142,6 @@ class Cartoon:
                 t.fd(a)
         t.end_fill()
         turtle.tracer(True)
-
     def kaan1(self, x, y):
         t = self.t
         self.meme(x, y)
@@ -178,7 +155,6 @@ class Cartoon:
         t.circle(-30, 50)
         t.circle(-300, 10)
         t.end_fill()
-
     def kaan2(self, x, y):
         t = self.t
         self.meme(x, y)
@@ -192,10 +168,8 @@ class Cartoon:
         t.seth(190)
         t.circle(300, 17)
         t.end_fill()
-
     def jiu(self):
         t = self.t
-
         t.fillcolor('#F6D02F')
         t.begin_fill()
         #
@@ -205,18 +179,15 @@ class Cartoon:
         t.circle(100, 105)
         t.left(180)
         t.circle(-100, 5)
-
         #
         t.seth(20)
         t.circle(300, 30)
         t.circle(30, 50)
         t.seth(190)
         t.circle(300, 36)
-
         #
         t.seth(150)
         t.circle(150, 70)
-
         #
         t.seth(200)
         t.circle(300, 40)
@@ -224,13 +195,11 @@ class Cartoon:
         t.seth(20)
         t.circle(300, 35)
         # print(t.pos())
-
         #
         t.seth(240)
         t.circle(105, 95)
         t.left(180)
         t.circle(-105, 5)
-
         #
         t.seth(210)
         t.circle(500, 18)
@@ -256,14 +225,12 @@ class Cartoon:
         t.circle(10, 70)
         t.seth(10)
         t.circle(300, 18)
-
         t.seth(75)
         t.circle(500, 8)
         t.left(180)
         t.circle(-500, 15)
         t.seth(250)
         t.circle(100, 65)
-
         #
         t.seth(320)
         t.circle(100, 5)
@@ -272,21 +239,18 @@ class Cartoon:
         t.seth(220)
         t.circle(200, 20)
         t.circle(20, 70)
-
         t.seth(60)
         t.circle(-100, 20)
         t.left(180)
         t.circle(100, 20)
         t.seth(300)
         t.circle(10, 70)
-
         t.seth(60)
         t.circle(-100, 20)
         t.left(180)
         t.circle(100, 20)
         t.seth(10)
         t.circle(100, 60)
-
         #
         t.seth(180)
         t.circle(-100, 10)
@@ -298,31 +262,24 @@ class Cartoon:
         t.circle(100, 35)
         t.left(180)
         t.circle(-100, 10)
-
         #
         t.seth(290)
         t.circle(100, 55)
         t.circle(10, 50)
-
         t.seth(120)
         t.circle(100, 20)
         t.left(180)
         t.circle(-100, 20)
-
         t.seth(0)
         t.circle(10, 50)
-
         t.seth(110)
         t.circle(100, 20)
         t.left(180)
         t.circle(-100, 20)
-
         t.seth(30)
         t.circle(20, 50)
-
         t.seth(100)
         t.circle(100, 40)
-
         #
         t.seth(200)
         t.circle(-100, 5)
@@ -334,24 +291,19 @@ class Cartoon:
         t.circle(-300, 21)
         t.left(180)
         t.circle(300, 3)
-
         #
         t.seth(43)
         t.circle(200, 60)
-
         t.right(10)
         t.fd(10)
-
         t.circle(5, 160)
         t.seth(90)
         t.circle(5, 160)
         t.seth(90)
-
         t.fd(10)
         t.seth(90)
         t.circle(5, 180)
         t.fd(10)
-
         t.left(180)
         t.left(20)
         t.fd(10)
@@ -359,14 +311,12 @@ class Cartoon:
         t.fd(10)
         t.seth(240)
         t.circle(50, 30)
-
         t.end_fill()
         self.meme(130, 125)
         t.seth(-20)
         t.fd(5)
         t.circle(-5, 160)
         t.fd(5)
-
         #
         self.meme(166, 130)
         t.seth(-90)
@@ -377,7 +327,6 @@ class Cartoon:
         t.fd(3)
         t.circle(-4, 180)
         t.fd(3)
-
         #
         self.meme(168, 134)
         t.fillcolor('#F6D02F')
@@ -400,7 +349,6 @@ class Cartoon:
         t.fd(30)
         t.right(110)
         t.fd(32)
-
         t.right(106)
         t.circle(100, 25)
         t.right(15)
@@ -420,12 +368,10 @@ class Cartoon:
         t.right(10)
         t.fd(10)
         t.end_fill()
-
         #
         t.fillcolor('#923E24')
         self.meme(126.82, -156.84)
         t.begin_fill()
-
         t.seth(30)
         t.fd(40)
         t.left(100)
@@ -457,7 +403,6 @@ class Cartoon:
         t.right(15)
         t.circle(-300, 2)
         t.end_fill()
-
         self.topi(-134.07, 147.81)
         self.mukh(-5, 25)
         self.gaala1(-126, 32)
@@ -467,7 +412,6 @@ class Cartoon:
         self.aankha1(-85, 90)
         self.aankha2(50, 110)
         t.hideturtle()
-
     def topi(self, x, y):
         self.meme(x, y)
         t = self.t
@@ -498,7 +442,6 @@ class Cartoon:
         t.left(180)
         t.circle(270, 27)
         t.circle(-80, 98)
-
         t.fillcolor('#444444')
         t.begin_fill()
         t.left(180)
@@ -506,11 +449,9 @@ class Cartoon:
         t.left(58)
         t.circle(200, 45)
         t.end_fill()
-
         self.meme(-58, 270)
         t.pencolor('#228B22')
         t.dot(35)
-
         self.meme(-30, 280)
         t.fillcolor('#228B22')
         t.begin_fill()
@@ -524,11 +465,8 @@ class Cartoon:
         t.fd(15)
         t.end_fill()
         t.pencolor('#000000')
-
     def start(self):
         self.jiu()
-
-
 def main():
     print('Painting the Cartoon... ')
     turtle.screensize(800, 600)
@@ -536,7 +474,5 @@ def main():
     cartoon = Cartoon()
     cartoon.start()
     turtle.mainloop()
-
-
 if __name__ == '__main__':
     main()
